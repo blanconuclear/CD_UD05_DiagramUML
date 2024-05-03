@@ -1,0 +1,83 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>468</x><y>274</y><w>240</w><h>168</h></coordinates><panel_attributes>Animal
+--
+- nombre: String
+- especie: String
+- raza: String
+- propietario: String
+- historialConsultas: ArrayList&lt;Consulta&gt;
+--
++ void agregarConsulta()
++ ArrayList&lt;Consulta&gt; getHistorialConsultas()
++ void setHistorialConsultas(ArrayList&lt;Consulta&gt; historialConsultas)
++ String getNombre()
++ void setNombre(String)
++ String getEspecie()
++ void setEspecie(String)
++ String getRaza()
++ void setRaza(String)
++ String getPropietario()
++ void setPropietario(String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>486</x><y>52</y><w>216</w><h>144</h></coordinates><panel_attributes>Cliente
+--
+- nombre: String
+- direccion: String
+- telefono: String
+- listaAnimales: ArrayList&lt;Animal&gt;
+--
++ ArrayList&lt;Animal&gt; getListaAnimales()
++ void setListaAnimales(ArrayList&lt;Animal&gt; listaAnimales)
++ String getTelefono()
++ void setTelefono(String telefono)
++ String getDireccion()
++ void setDireccion(String direccion)
++ String getNombre()
++ void setNombre(String nombre)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>498</x><y>514</y><w>210</w><h>162</h></coordinates><panel_attributes>Consuta
+--
+- fecha: String
+- motivo: String
+- diagnostico: String
+- tratamiento: String
+- veterinario: Veterinario
+--
++ String getFecha()  
++ void setFecha(String fecha)  
++ String getMotivo()  
++ void setMotivo(String motivo)  
++ String getDiagnostico()  
++ void setDiagnostico(String diagnostico)  
++ String getTratamiento()  
++ void setTratamiento(String tratamiento)  
++ Veterinario getVeterinario()  
++ void setVeterinario(Veterinario veterinario)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>822</x><y>538</y><w>258</w><h>126</h></coordinates><panel_attributes>Veterinaria
+--
+- listaAnimales: ArrayList&lt;Animal&gt;
+- listaClientes: ArrayList&lt;Cliente&gt;
+--
++ ArrayList&lt;Animal&gt; getListaAnimales()
++ void setListaAnimales(ArrayList&lt;Animal&gt; listaAnimales)
++ ArrayList&lt;Cliente&gt; getListaClientes()
++ void setListaClientes(ArrayList&lt;Cliente&gt; listaClientes)
++ void agregarCliente(Cliente cliente)
++ void agregarAnimal(Animal animal)
++ void asignarConsulta(Animal animal, Consulta consulta)
++ void imprimirConsultas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>816</x><y>736</y><w>222</w><h>96</h></coordinates><panel_attributes>Veterinario
+--
+- nombre: String
+- especialidad: String
+--
++ String getNombre()  
++ void setNombre(String nombre)  
++ String getEspecialidad()  
++ void setEspecialidad(String especialidad)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>658</y><w>72</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1,n
+m2=1,n
+veterinaria tiene</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>702</x><y>574</y><w>132</w><h>30</h></coordinates><panel_attributes>lt=-
+m1=1,n
+m2=1,1
+tiene</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>582</x><y>436</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1,n
+m2=0,n
+</panel_attributes><additional_attributes>10;10;20;130</additional_attributes></element><element><id>Relation</id><coordinates><x>582</x><y>190</y><w>30</w><h>96</h></coordinates><panel_attributes>lt=-
+m1=1,n
+m2=1,1</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element></diagram>
